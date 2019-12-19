@@ -6,6 +6,25 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     }
+ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    }
+      
+ul a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+      }
+      
+ul a:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #242222;
+      }
 form {
     width: 450px;
     margin: 50px auto;
@@ -47,7 +66,7 @@ footer {
     margin-top: 10px;
 }
 @media (max-width: 480px) {
-    .form {width: 100%;}
+    .form {width: 80%;}
     body {
         background-image: url(../images/foto4.jpg);
         background-size: 100% 100%;
@@ -58,5 +77,11 @@ footer {
     footer {
         width: 450px;
     }
+    ul {
+        padding-inline-start: 10px;
+       }
+    nav {
+        width: 400px;
+        }
     }
     

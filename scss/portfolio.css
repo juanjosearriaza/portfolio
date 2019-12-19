@@ -101,6 +101,33 @@ h1, h2 {
   font-size: 20px;
 }
 
+.navigation {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.navigation a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #242222;
+}
+
 ul {
   list-style: none;
 }
@@ -247,6 +274,18 @@ footer {
     -ms-grid-rows: 15% 1fr 1fr 1fr 1fr 1fr 1fr 5%;
         grid-template-rows: 15% 1fr 1fr 1fr 1fr 1fr 1fr 5%;
         grid-template-areas: "header" "section1" "section2" "section3" "section4" "section5"  "section6" "footer";
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  nav {
+    width: 1024px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  nav {
+    width: 105%;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
